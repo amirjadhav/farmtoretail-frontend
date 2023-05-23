@@ -1,19 +1,18 @@
-import React from "react";
-
 const TopHeader = () => {
   return (
-    <div>
+    <>
       <form>
-        <div className="flex">
-          <a href="https://flowbite.com/" className="flex items-center mr-4">
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Farm2Retail
-            </span>
-          </a>
+        <div className="flex gap-3 m-8 mx-24">
+          <img
+            width={80}
+            src="https://tagtrendy.in/wp-content/uploads/2023/04/farmer.png"
+            alt=""
+          />
+
           <button
             id="dropdown-button"
             data-dropdown-toggle="dropdown"
-            className="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-l-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
+            className="z-10 inline-flex items-center flex-shrink-0 px-3 m-3 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-l-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
             type="button"
           >
             All categories{" "}
@@ -36,7 +35,7 @@ const TopHeader = () => {
             className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
           >
             <ul
-              className="py-2 text-sm text-gray-700 dark:text-gray-200"
+              className="text-sm text-gray-700 dark:text-gray-200"
               aria-labelledby="dropdown-button"
             >
               <li>
@@ -73,7 +72,7 @@ const TopHeader = () => {
               </li>
             </ul>
           </div>
-          <div className="relative w-full">
+          <div className="relative w-3/5 mt-5">
             <input
               type="search"
               id="search-dropdown"
@@ -105,7 +104,7 @@ const TopHeader = () => {
           </div>
         </div>
       </form>
-    </div>
+    </>
   );
 };
 
